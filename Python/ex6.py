@@ -59,11 +59,21 @@ class XCalculator:
 # print(d)
 
 
-xcalc = XCalculator(10, 30)
-print(xcalc.addition())
-print(xcalc.subtraction())
-print(xcalc.multiplication())
-print(xcalc.division())
+# xcalc = XCalculator(10, 30)
+# print(xcalc.addition())
+# print(xcalc.subtraction())
+# print(xcalc.multiplication())
+# print(xcalc.division())
+
+
+
+
+
+
+
+
+
+
 
 
 
