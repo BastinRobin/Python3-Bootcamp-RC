@@ -187,6 +187,28 @@ response = {
 				"name": 'Microsoft',
 				"address": 'Microsoft Campus, Domlur'
 			}
+		},
+		{
+			"id" : 19167113,
+			"title": 'Lead Software engineer',
+			"years": 1,
+			"created": 19917930,
+			"updated": 179902902,
+			"org": {
+				"name": 'Google',
+				"address": 'Google Campus'
+			}
+		},
+		{
+			"id" : 19167113,
+			"title": 'Lead Software engineer',
+			"years": 4,
+			"created": 19917930,
+			"updated": 179902902,
+			"org": {
+				"name": 'Google',
+				"address": 'Google Campus'
+			}
 		}	
 	]
 }
@@ -201,6 +223,28 @@ dictionary
 	- Print organizations worked - ['MS', 'Facebook']
 '''
 	
+# print(response)
+# print(response['fname'])
+# print(type(response['education']))
+# print(len(response['education']))
+
+# first = response['education'][0]['years']
+# second = response['education'][1]['years']
+# # print(first + second)
+
+
+# thrid = response['experiences'][0]['years']
+# four = response['experiences'][1]['years']
+# five = response['experiences'][2]['years']
+# six = response['experiences'][3]['years']
+
+
+
+# print(thrid + four + five + six)
+
+
+
+
 
 
 
