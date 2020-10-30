@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment Analysis</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>	
+	<div class="container">
+		<div class="row">
+			<form method="GET" action="/analyse">
+				<div class="col-md-6 mx-auto">
+					<h5>Sentiment Analysis</h5>
+					{% with messages = get_flashed_messages() %}
+					  {% if messages %}
+					    {% for message in messages %}
+					      
+					      {% if message == 'POSITIVE'%}
+					      	<div class="alert alert-success">
+					      		{{ message }}
+					      	</div>
+					      {% endif %}
+
+
+					      {% if message == 'NEUTRAL'%}
+					      	<div class="alert alert-info">
+					      		{{ message }}
+					      	</div>
+					      {% endif %}
+
+
+
+					      {% if message == 'NEGATIVE'%}
+					      	<div class="alert alert-warning">
+					      		{{ message }}
+					      	</div>
+					      {% endif %}
+
+
+					    {% endfor %}
+					  {% endif %}
+					{% endwith %}
+					<div class="form-group">
+						<textarea name="content" class="form-contol"></textarea>
+					</div>
+
+					<div class="form-group">
+						<button class='btn btn-xs btn-success'>Analyze</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

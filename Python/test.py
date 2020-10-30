@@ -10,7 +10,10 @@ list_of_news = [
 ]
 
 
+f = open("result.txt", "a")
 
 for item in list_of_news:
 	news = NewSummarize(item)
-	print(news.summarize())
+	f.write(news.summarize() + '\n')
+
+f.close()

@@ -1,0 +1,9 @@
+Name,Age,Gender,Model,Review,sentiment,polarity
+Jim,36,M,iphone7,I really love the product and its easy to navigate,POSTIVE,0.4666666666666667
+Jack,30,M,iphone7,I can seen frequently my mobile hangs and its very slow and poor,NEGATIVE,-0.23
+James,20,M,iphone7,excited with the latest updates,POSTIVE,0.4375
+Tim,37,F,iphone5,when will I get my latest updates ,POSTIVE,0.5
+Ashley,39,M,iphone4,I am really happy with my existing mobile and its really worth for money,POSTIVE,0.55
+Kiran,24,M,iphone8,Apple needs to improve the quality,NEUTRAL,0.0
+Kishore,30,M,iphone4,I wont recommend this phone to anyone ,NEUTRAL,0.0
+Jane,34,F,iphone5,How can apply be so careless on some of the features,NEGATIVE,-0.5
