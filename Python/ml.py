@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
+from joblib import load, dump
 
 
 
@@ -20,7 +21,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 clf = LogisticRegression(solver = 'newton-cg', max_iter=1000, n_jobs=2)
 # Train the model mean teach 70% examples
 clf.fit(X_train, y_train)
+
+
 prediction = clf.predict(X_test)
 
 print("Accuracy of our model prediction heart diseases", accuracy_score(y_test, prediction)*100)
 
+
+
+## How to save the models
+# dump(clf, 'model.pkl')
